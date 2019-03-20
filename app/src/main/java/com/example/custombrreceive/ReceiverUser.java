@@ -9,9 +9,6 @@ public class ReceiverUser extends BroadcastReceiver {
     @Override
     public void onReceive(Context arg0, Intent arg1) {
         String data1 = arg1.getStringExtra("data1");
-        /*// 인텐트에서 데이터를 구해서 토스트 메시지로 출력
-        Toast.makeText(arg0, "BR received - " + data1,
-                Toast.LENGTH_SHORT).show();*/
 
         // 인텐트를 생성해서 메인 액티비티를 실행
         Intent intentRun = new Intent(arg0, MainActivity.class);
